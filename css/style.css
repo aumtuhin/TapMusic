@@ -1,0 +1,90 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background: url('../img/color_bg.png') no-repeat;
+    background-size: 100em 80em; */
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pads{
+    background: lightseagreen;
+    width: 100%;
+    display: flex;
+}
+
+.pads > div{
+    height: 100px;
+    width: 100px;
+    flex: 1;
+}
+
+.pad1{
+    background: #1dd1a1;
+}
+
+.pad2{
+    background: #ee5253;
+}
+
+.pad3{
+    background: #00d2d3;
+}
+
+.pad4{
+    background: #54a0ff;
+}
+
+.pad5{
+    background: #feca57;
+}
+
+.pad6{
+    background: #5f27cd;
+}
+
+.visual > div{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+
+    95%{
+        background: #feca57;
+    }
+
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.visual > div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0;
+}
